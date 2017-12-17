@@ -17,6 +17,7 @@ def calculate_tax(before_tax):
         tax=before_tax*0.35-5505
     elif before_tax>80000:
         tax=before_tax*0.45-13505
+    return tax
 def calculate_salary(salary):
     before_tax=salary-salary*0.165-3500
     tax=calculate_tax(before_tax)
