@@ -26,7 +26,6 @@ def calculate_salary(salary):
 args=[]
 for arg in sys.argv[1:]:
     args.append(arg)
-scores={}
 for arg in args:
     list1=arg.split(':')
     try:
