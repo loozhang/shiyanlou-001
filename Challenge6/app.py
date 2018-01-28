@@ -4,7 +4,7 @@ from flask import Flask,render_template
 import json
 import os
 
-app=flask(__name__)
+app=Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD']=True
 
 @app.errorhandler(404)
