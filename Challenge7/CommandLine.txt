@@ -1,0 +1,10 @@
+$sudo pip3 install mysqlclient
+$sudo pip3 install FLASK_SQLAlchemy
+$sudo service mysql start
+>mysql -uroot
+>create database shiyanlou;
+>quit
+$export FLASK_APP=app.py
+$flask shell
+>from app import insert_datas
+>insert_datas()
