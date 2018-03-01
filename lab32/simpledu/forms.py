@@ -54,6 +54,10 @@ class CourseForm(FlaskForm):
     def validate_author_id(self,field):
         if not User.query.get(self.author_id.data):
             raise ValidationError('User not exist')
+    
+    def validate_image_url(self,field):
+        if not field.data.isalnum():
+            raise ValidationError('Error')
 
     def create_course(self):
         course=Course()
